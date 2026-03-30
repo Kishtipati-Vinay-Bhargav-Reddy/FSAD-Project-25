@@ -149,7 +149,8 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## 📸 Screenshots
 
-(Add screenshots here if needed)
+<img width="1919" height="924" alt="image" src="https://github.com/user-attachments/assets/68958dc3-54e7-433a-98a8-52e1d29ca0be" />
+
 
 ---
 
