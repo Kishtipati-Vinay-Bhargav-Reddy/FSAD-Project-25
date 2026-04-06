@@ -1,6 +1,6 @@
 import api from "./api";
 
-// ✅ LOGIN
+
 export const loginUser = async ({ email, password }) => {
   try {
     const { data } = await api.post("/api/auth/login", {
@@ -14,7 +14,7 @@ export const loginUser = async ({ email, password }) => {
   }
 };
 
-// ✅ REGISTER
+
 export const registerUser = async (user) => {
   try {
     const { data } = await api.post("/api/auth/register", user);
@@ -25,7 +25,7 @@ export const registerUser = async (user) => {
   }
 };
 
-// ✅ PROFILE
+
 export const fetchProfile = async () => {
   try {
     const { data } = await api.get("/api/auth/profile");

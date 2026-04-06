@@ -1,6 +1,6 @@
 import api from "./api";
 
-// ✅ TEACHER DASHBOARD
+
 export const fetchTeacherDashboard = async () => {
   try {
     const [assignRes, submissionRes] = await Promise.all([
@@ -34,7 +34,7 @@ export const fetchTeacherDashboard = async () => {
   }
 };
 
-// ✅ STUDENT DASHBOARD (FIXED 🔥)
+
 export const fetchStudentDashboard = async () => {
   try {
     const [assignRes, submissionRes] = await Promise.all([

@@ -21,6 +21,14 @@ public class Assignment {
     @Column(name = "teacher_name")
     private String teacherName;
 
+    @Column(name = "course_code")
+    @JsonProperty("courseCode")
+    private String courseCode;
+
+    @Column(name = "course_name")
+    @JsonProperty("courseName")
+    private String courseName;
+
     // getters & setters
 
     public Long getId() { return id; }
@@ -36,4 +44,10 @@ public class Assignment {
 
     public String getTeacherName() { return teacherName; }
     public void setTeacherName(String teacherName) { this.teacherName = teacherName; }
+
+    public String getCourseCode() { return courseCode; }
+    public void setCourseCode(String courseCode) { this.courseCode = courseCode; }
+
+    public String getCourseName() { return courseName; }
+    public void setCourseName(String courseName) { this.courseName = courseName; }
 }

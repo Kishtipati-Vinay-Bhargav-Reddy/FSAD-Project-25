@@ -1,8 +1,6 @@
 import api from "./api";
 
-/* =========================
-   ✅ STUDENT: UPLOAD FILE
-========================= */
+
 export const submitAssignment = async (formData) => {
   try {
     const assignmentId = formData.get("assignmentId");
@@ -26,9 +24,7 @@ export const submitAssignment = async (formData) => {
   }
 };
 
-/* =========================
-   ✅ GET BY ASSIGNMENT
-========================= */
+
 export const fetchSubmissionsByAssignment = async (assignmentId) => {
   try {
     if (!assignmentId) return [];
@@ -41,9 +37,6 @@ export const fetchSubmissionsByAssignment = async (assignmentId) => {
   }
 };
 
-/* =========================
-   ✅ GET ALL
-========================= */
 export const getAllSubmissions = async () => {
   try {
     const { data } = await api.get("/submissions");
@@ -54,9 +47,7 @@ export const getAllSubmissions = async () => {
   }
 };
 
-/* =========================
-   ✅ GRADE
-========================= */
+
 export const gradeSubmission = async (id, payload) => {
   try {
     if (!id) throw new Error("Submission ID missing");
@@ -69,9 +60,7 @@ export const gradeSubmission = async (id, payload) => {
   }
 };
 
-/* =========================
-   ✅ FILE URL (FIXED 🔥)
-========================= */
+
 export const getFileUrl = (fileName) => {
   if (!fileName) return null;
   return `http://localhost:8080/submissions/file/${fileName}`;
